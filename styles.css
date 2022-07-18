@@ -14,6 +14,7 @@
     --heading-color: #3b3663;
 }
 
+/* Main Section */
 
 section{
     min-height: 100vh;
@@ -39,11 +40,10 @@ h1{
 /* Cards Styles  */
 
 .wrapper{
-    max-width: 928px;
     margin: 45px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -187,23 +187,52 @@ footer a:hover{
 
 /* Responsive Media Queries  */
 
+@media screen and (max-width:1140px){
+    .wrapper{
+        width: 1000px;
+    }
+    .card{
+        width: auto;
+    }
+}
+
 @media screen and (max-width:990px) {
     .wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 720px;
+    }
+    .card{
+        width: auto;
     }
 }
 
 @media screen and (max-width:736px) {
     h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     .wrapper{
         display: grid;
         grid-template-columns: 1fr;
         gap: 40px;
+        width: auto;
     }
     .card{
         width: 340px;
+    }
+}
+
+@media screen and (max-width:384px) {
+    section{
+        padding:40px 0;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .card{
+        width: auto;
+    }
+    .name{
+        font-size: 25px;
     }
 }
