@@ -227,10 +227,10 @@ footer a:hover{
         padding:40px 0;
     }
     .wrapper{
-        width: 100%;
+        width: auto;
     }
     .card{
-        width: auto;
+        width: 96%;
     }
     .name{
         font-size: 25px;
